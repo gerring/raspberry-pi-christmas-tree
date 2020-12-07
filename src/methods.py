@@ -91,6 +91,7 @@ def number(value, t):
             break
         GPIO.output(pin, GPIO.HIGH)
         index += 1
+        sleep(t)
 
 def off():
     for pin in pins:
