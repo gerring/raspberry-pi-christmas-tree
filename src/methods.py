@@ -120,7 +120,7 @@ def main():
         onebyone(0.1, False)
         off()
         sleep(2)
-        
+
         pi = Pi(10000)
         for c in pi.generator():
             number(c, t)
