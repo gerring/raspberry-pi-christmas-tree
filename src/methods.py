@@ -91,7 +91,7 @@ def number(value, t):
             break
         GPIO.output(pin, GPIO.HIGH)
         index += 1
-        sleep(t)
+    sleep(t) 
 
 def off():
     for pin in pins:
@@ -113,14 +113,14 @@ def gettng_faster(t, delta, function):
 
 def main():
     init()
-    t = 0.1
+    t = 0.5
     while True:
 
         # Tell user we are starting
-        onebyone(0.1)
-        onebyone(0.1, False)
+        onebyone(0.15)
+        onebyone(0.15, False)
         off()
-        sleep(2)
+        sleep(1.5)
 
         pi = Pi(10000)
         for c in pi.generator():
