@@ -114,17 +114,16 @@ def gettng_faster(t, delta, function):
 def main():
     init()
     t = 0.5
-    while True:
 
-        # Tell user we are starting
-        onebyone(0.15)
-        onebyone(0.15, False)
-        off()
-        sleep(1.5)
+    # Tell user we are starting
+    onebyone(0.15)
+    onebyone(0.15, False)
+    off()
+    sleep(1.5)
 
-        pi = Pi(10000)
-        for c in pi.generator():
-            number(c, t)
+    pi = Pi()
+    for c in pi.generator():
+        number(c, t)
 
 if __name__ == "__main__":
     main()
